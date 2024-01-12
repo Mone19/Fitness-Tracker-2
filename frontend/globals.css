@@ -1,0 +1,17 @@
+body {
+  width: 90%;
+  min-width: 390px;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+.error {
+  display: none;
+  background-color: red;
+  height: 100px;
+  width: 100%;
+}
+
+.show {
+  display: block;
+}

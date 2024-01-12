@@ -1,0 +1,213 @@
+@media screen and (max-width: 568px) {
+  .background .formular h1 {
+    color: #000000 !important;
+  }
+  
+
+  .background {
+    outline: none !important;
+    background: none !important;
+    
+  }
+
+
+  .color-box {
+    width: 1500px;
+    height: 116vh;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(image/background_profile.png);
+    z-index: -1;
+    filter: drop-shadow(0 0 2px rgba(71, 71, 71, 0.8));
+  }
+  
+  ul {
+    width: 100% !important;
+    left: 0;
+    transform: none;
+  }
+
+  .footer {
+    width: 100% !important;
+    left: 0;
+    transform: none;
+  }
+}
+
+
+.container {
+  max-width: 1500px;
+  flex: 1;
+}
+
+/* <!-- Navi --> */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #e6ebec;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 1500px;
+  height: 80px;
+  z-index: 1000;
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  font-size: 20px;
+  padding: 16px 18px;
+  text-decoration: none;
+  line-height: 47px;
+}
+
+li a:hover:not(.active) {
+  color: #fff;
+  background-color: rgb(89, 154, 154)
+}
+
+li a.active {
+  color: white;
+  background-color: rgb(3, 80, 80);
+}
+
+.formular {
+position: center;
+margin-top: 150px;
+
+}
+
+.formular h1 {
+  margin-top: 2%;
+  color: #000000;
+  margin-left: 120px;
+}
+
+.formular p {
+  color: #000000;
+  font-size: 15px;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
+.formular span {
+  font-weight: bold;
+}
+
+.formular input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #e6ebec;
+}
+
+/* Profilbild */
+.rounded {
+border-radius: 100px !important;
+position: absolute;
+top: 10px;
+left: 180px;
+width: 120px;
+height: 120px;
+outline: 1px solid rgba(12, 12, 12, 0.386)
+}
+
+/* Button */
+button {
+  text-align: center;
+  position: absolute;
+  top: 90%;
+  left: 200px;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 50px;
+  border-radius: 20px !important;
+  border: none !important;
+  outline: 1px solid rgb(201, 255, 255) ;
+  background-color: rgb(0, 101, 101) !important;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(89, 154, 154) !important;
+}
+
+
+/* Overlay */
+.background {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 800px;
+  background-color:#ffffffa1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  outline: 1px solid rgba(12, 12, 12, 0.386)
+}
+
+.footer {
+  background-color: #d1d1d1;
+  padding: 20px 0;
+  max-width: 1500px;
+  max-height: 1600px;
+  margin: 0 auto;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  position:fixed
+}
+
+.color-box {
+  width: 1500px;
+  height: 114vh;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(image/background_profile.png);
+  z-index: -1;
+  filter: drop-shadow(0 0 2px rgba(71, 71, 71, 0.8));
+}
+.bmi-scale {
+  width: 100%; 
+  height: 20px; 
+  background-color: #ddd; 
+  position: relative;
+}
+
+.bmi-pointer {
+  
+  transform: translateX(-50%);
+  width: 10px; 
+  height: 30px; 
+  background-color: black; 
+  position: absolute;
+  top: -5px; 
+  left: 50%; 
+}
+
+
+.underweight { background-color: yellow; }
+.normal { background-color: green; }
+.overweight { background-color: orange; }
+.obese { background-color: red; }
