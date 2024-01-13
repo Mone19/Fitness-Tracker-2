@@ -3,7 +3,7 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const id = urlParams.get('id');
 
-fetch("http://localhost:3000/api/profile/" + id)
+fetch("https://fitness-tracker.byte-jumper.de:3000/api/profile/" + id)
   .then(res => {
     if (res.ok) {
 
@@ -86,7 +86,7 @@ function save() {
     
   };
 
-  fetch('http://localhost:3000/api/profile/6596921b8cb903d3edf57f1c', {
+  fetch('https://fitness-tracker.byte-jumper.de:3000/api/profile/6596921b8cb903d3edf57f1c', {
     method: 'PATCH',
     headers: {
       'Content-Type': 'application/json'
@@ -141,7 +141,7 @@ const logoutButton = document.getElementById('logoutButton');
 
 logoutButton.addEventListener('click', async () => {
   try {
-    const response = await fetch("http://localhost:3000/api/logout", {
+    const response = await fetch("https://fitness-tracker.byte-jumper.de:3000/api/logout", {
       method: 'GET',
     });
 
