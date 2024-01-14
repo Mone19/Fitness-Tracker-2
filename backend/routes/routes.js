@@ -8,6 +8,8 @@ const session = require('express-session');
 const path = require("path");
 const { Db } = require("mongodb");
 
+
+
 // Authentifizierungsrouten
 //Google Authentifizierung starten
 router.get('/auth/google', passport.authenticate('google'));
