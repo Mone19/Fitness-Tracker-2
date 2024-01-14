@@ -5,11 +5,18 @@ const routes = require('../routes/routes.js');
 require('dotenv').config();
 const passport = require('../Auth/auth.js')
 const session = require('express-session');
+const fs = require('fs');
+const https = require('https');
+const ssloptions = {
+    key: fs.readFileSync('../ssl/privkey.pem'),
+    cert: fs.readFileSync('../ssl/cert.pem')
+};
 
 
 
 
 const app = express();
+
 
 app.use(session({
     secret: process.env.key,
@@ -49,6 +56,9 @@ mongoose.connect(process.env.MONGO_CONN_STRING, {
 
 
 
+const server = https.createServer(ssloptions, app).listen(port, function() {
+    console.log("Server listens on port:" + port);
+    });
 
 
-app.listen(port, () => console.log(`It's running on port ${port}`));
+// app.listen(port, () => console.log(`It's running on port ${port}`));
